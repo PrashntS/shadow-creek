@@ -4099,8 +4099,9 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <text x="205.74" y="93.98" size="2.54" layer="95" align="center">LEDs</text>
 <wire x1="210.82" y1="96.52" x2="210.82" y2="63.5" width="0.1524" layer="95"/>
 <wire x1="210.82" y1="63.5" x2="195.58" y2="63.5" width="0.1524" layer="95"/>
-<wire x1="195.58" y1="63.5" x2="190.5" y2="58.42" width="0.1524" layer="95"/>
-<wire x1="190.5" y1="58.42" x2="190.5" y2="30.48" width="0.1524" layer="95"/>
+<wire x1="195.58" y1="63.5" x2="191.24395" y2="59.16395" width="0.1524" layer="95"/>
+<wire x1="191.24395" y1="59.16395" x2="190.5" y2="57.367896875" width="0.1524" layer="95" curve="45.00007"/>
+<wire x1="190.5" y1="57.367896875" x2="190.5" y2="30.48" width="0.1524" layer="95"/>
 <wire x1="190.5" y1="30.48" x2="152.4" y2="30.48" width="0.1524" layer="95"/>
 <wire x1="152.4" y1="30.48" x2="152.4" y2="96.52" width="0.1524" layer="95"/>
 <wire x1="152.4" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="95"/>
@@ -4128,14 +4129,14 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <instance part="S2" gate="G$1" x="172.72" y="160.02"/>
 <instance part="C7" gate="G$1" x="175.26" y="147.32" rot="R270"/>
 <instance part="R4" gate="G$1" x="157.48" y="157.48" rot="R90"/>
-<instance part="D1" gate="G$1" x="170.18" y="66.04" rot="R270"/>
+<instance part="D1" gate="G$1" x="170.18" y="38.1" rot="R270"/>
 <instance part="D3" gate="G$1" x="170.18" y="86.36" rot="R270"/>
 <instance part="D5" gate="G$1" x="162.56" y="45.72"/>
 <instance part="D4" gate="G$1" x="170.18" y="76.2" rot="R270"/>
 <instance part="R5" gate="G$1" x="180.34" y="86.36"/>
 <instance part="R6" gate="G$1" x="180.34" y="76.2"/>
 <instance part="R7" gate="G$1" x="175.26" y="48.26"/>
-<instance part="R8" gate="G$1" x="180.34" y="66.04"/>
+<instance part="R8" gate="G$1" x="180.34" y="38.1"/>
 </instances>
 <busses>
 <bus name="PA[0..27]">
@@ -4600,8 +4601,8 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="165.1" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
-<label x="157.48" y="66.04" size="1.778" layer="95"/>
+<wire x1="165.1" y1="38.1" x2="160.02" y2="38.1" width="0.1524" layer="91"/>
+<label x="157.48" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -4692,29 +4693,27 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 </net>
 <net name="VCC" class="0">
 <segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="76.2" x2="187.96" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="38.1" x2="187.96" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="86.36" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="81.28" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
 <junction x="193.04" y="81.28"/>
 <label x="195.58" y="81.28" size="1.778" layer="95"/>
-<wire x1="193.04" y1="76.2" x2="193.04" y2="66.04" width="0.1524" layer="91"/>
-<junction x="193.04" y="76.2"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="66.04" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
-<junction x="193.04" y="66.04"/>
-<wire x1="187.96" y1="60.96" x2="187.96" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="76.2" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="76.2" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
+<junction x="187.96" y="76.2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="175.26" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
