@@ -8772,7 +8772,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_LARGE" value="SPK"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S-COPPER"/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603"/>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="3.3uH"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
@@ -9668,27 +9668,6 @@ I2C/TWI</text>
 <label x="20.32" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VDDIO_2" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDIO_2"/>
-<wire x1="35.56" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
-<label x="20.32" y="157.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VDDIO_3" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDIO_3"/>
-<wire x1="35.56" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
-<label x="20.32" y="154.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VDDIO" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDIO"/>
-<wire x1="35.56" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
-<label x="20.32" y="152.4" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VDDOUT" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="VDDOUT"/>
@@ -9791,6 +9770,20 @@ I2C/TWI</text>
 <wire x1="63.5" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="25.4" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDDIO" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="VDDIO_2"/>
+<wire x1="35.56" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIO_3"/>
+<wire x1="35.56" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
+<label x="20.32" y="154.94" size="1.778" layer="95"/>
+<wire x1="30.48" y1="157.48" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIO"/>
+<wire x1="35.56" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="154.94" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
+<junction x="30.48" y="154.94"/>
 </segment>
 </net>
 </nets>
