@@ -9828,31 +9828,7 @@ I2C/TWI</text>
 <wire x1="175.26" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDDCORE_2" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDCORE_2"/>
-<wire x1="20.32" y1="165.1" x2="15.24" y2="165.1" width="0.1524" layer="91"/>
-<label x="5.08" y="165.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VDDCORE_3" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDCORE_3"/>
-<wire x1="20.32" y1="162.56" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
-<label x="5.08" y="162.56" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VDDANA" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDANA"/>
-<wire x1="20.32" y1="167.64" x2="17.78" y2="167.64" width="0.1524" layer="91"/>
-<label x="5.08" y="167.64" size="1.778" layer="95"/>
-<wire x1="17.78" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="167.64" x2="17.78" y2="139.7" width="0.1524" layer="91"/>
-<junction x="17.78" y="167.64"/>
-<pinref part="U1" gate="A" pin="ADVREF"/>
-<wire x1="17.78" y1="139.7" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <wire x1="132.08" y1="7.62" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
@@ -9871,11 +9847,6 @@ I2C/TWI</text>
 </segment>
 </net>
 <net name="VDDCORE" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDCORE"/>
-<wire x1="20.32" y1="160.02" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
-<label x="5.08" y="160.02" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="45.72" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
@@ -9920,11 +9891,6 @@ I2C/TWI</text>
 </net>
 <net name="VDDIN" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="VDDIN"/>
-<wire x1="20.32" y1="157.48" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
-<label x="5.08" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="22.86" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="25.4" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
@@ -9935,13 +9901,31 @@ I2C/TWI</text>
 <junction x="106.68" y="25.4"/>
 <label x="106.68" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="VDDANA"/>
+<wire x1="20.32" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIN"/>
+<wire x1="20.32" y1="157.48" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIO_2"/>
+<wire x1="20.32" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="157.48" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIO_3"/>
+<wire x1="20.32" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="154.94" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
+<junction x="15.24" y="154.94"/>
+<wire x1="15.24" y1="152.4" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
+<junction x="15.24" y="152.4"/>
+<pinref part="U1" gate="A" pin="VDDIO"/>
+<wire x1="15.24" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="167.64" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
+<junction x="15.24" y="157.48"/>
+<pinref part="U1" gate="A" pin="ADVREF"/>
+<wire x1="20.32" y1="139.7" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="139.7" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
+<junction x="15.24" y="149.86"/>
+</segment>
 </net>
 <net name="VDDOUT" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDOUT"/>
-<wire x1="20.32" y1="147.32" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
-<label x="5.08" y="147.32" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="22.86" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
@@ -9957,8 +9941,22 @@ I2C/TWI</text>
 <net name="VDDPLL" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="VDDPLL"/>
-<wire x1="20.32" y1="144.78" x2="15.24" y2="144.78" width="0.1524" layer="91"/>
-<label x="5.08" y="144.78" size="1.778" layer="95"/>
+<wire x1="20.32" y1="144.78" x2="17.78" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDOUT"/>
+<wire x1="20.32" y1="147.32" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="144.78" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDCORE_2"/>
+<wire x1="20.32" y1="165.1" x2="17.78" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDCORE_3"/>
+<wire x1="20.32" y1="162.56" x2="17.78" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="165.1" x2="17.78" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDCORE"/>
+<wire x1="20.32" y1="160.02" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="162.56" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
+<junction x="17.78" y="162.56"/>
+<wire x1="17.78" y1="147.32" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
+<junction x="17.78" y="147.32"/>
+<junction x="17.78" y="160.02"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -10058,18 +10056,6 @@ I2C/TWI</text>
 </segment>
 </net>
 <net name="VDDIO" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VDDIO_2"/>
-<wire x1="20.32" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VDDIO_3"/>
-<wire x1="20.32" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
-<label x="5.08" y="152.4" size="1.778" layer="95"/>
-<wire x1="15.24" y1="154.94" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VDDIO"/>
-<wire x1="20.32" y1="149.86" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="152.4" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
-<junction x="15.24" y="152.4"/>
-</segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="22.86" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
