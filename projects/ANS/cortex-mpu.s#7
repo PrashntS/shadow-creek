@@ -8806,8 +8806,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="INT" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8968,8 +8968,8 @@ I2C/TWI</text>
 <instance part="INT" gate="P" x="124.46" y="165.1" rot="R270"/>
 <instance part="SUPPLY2" gate="G$1" x="162.56" y="165.1"/>
 <instance part="SUPPLY4" gate="G$1" x="160.02" y="127"/>
-<instance part="SUPPLY5" gate="G$1" x="251.46" y="86.36"/>
 <instance part="SUPPLY6" gate="G$1" x="200.66" y="78.74"/>
+<instance part="SUPPLY5" gate="G$1" x="236.22" y="35.56" rot="R180"/>
 </instances>
 <busses>
 <bus name="PA[0..27]">
@@ -9696,17 +9696,6 @@ I2C/TWI</text>
 <label x="259.08" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCC3" class="0">
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="50.8" x2="238.76" y2="50.8" width="0.1524" layer="91"/>
-<junction x="236.22" y="50.8"/>
-<wire x1="236.22" y1="50.8" x2="236.22" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="55.88" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
-<label x="241.3" y="55.88" size="1.6764" layer="95"/>
-</segment>
-</net>
 <net name="RESET_N" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="RESET_N"/>
@@ -9821,6 +9810,14 @@ I2C/TWI</text>
 <wire x1="187.96" y1="88.9" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
 <junction x="187.96" y="73.66"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="50.8" x2="238.76" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<wire x1="236.22" y1="35.56" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
+<junction x="236.22" y="50.8"/>
 </segment>
 </net>
 <net name="N$5" class="0">

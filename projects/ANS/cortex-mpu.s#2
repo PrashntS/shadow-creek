@@ -8863,7 +8863,10 @@ I2C/TWI</text>
 <wire x1="99.06" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="95"/>
 <wire x1="149.86" y1="35.56" x2="149.86" y2="170.18" width="0.1524" layer="95"/>
 <wire x1="149.86" y1="170.18" x2="99.06" y2="170.18" width="0.1524" layer="95"/>
-<wire x1="99.06" y1="170.18" x2="99.06" y2="35.56" width="0.1524" layer="95"/>
+<wire x1="99.06" y1="170.18" x2="99.06" y2="40.64" width="0.1524" layer="95"/>
+<wire x1="99.06" y1="40.64" x2="99.06" y2="43.18" width="0.1524" layer="95"/>
+<wire x1="99.06" y1="43.18" x2="99.06" y2="53.34" width="0.1524" layer="95"/>
+<wire x1="99.06" y1="53.34" x2="99.06" y2="35.56" width="0.1524" layer="95"/>
 <text x="33.02" y="7.62" size="2.54" layer="95" align="center">Decoupling Capacitors</text>
 <text x="129.54" y="5.08" size="2.54" layer="95" rot="R180" align="center">Filter</text>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="53.34" width="0.1524" layer="95"/>

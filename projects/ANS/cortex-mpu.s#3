@@ -8880,7 +8880,7 @@ I2C/TWI</text>
 <wire x1="210.82" y1="170.18" x2="152.4" y2="170.18" width="0.1524" layer="95"/>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="-2.54"/>
 <instance part="JP1" gate="G$1" x="251.46" y="111.76"/>
 <instance part="U1" gate="A" x="40.64" y="132.08"/>
 <instance part="R1" gate="G$1" x="231.14" y="121.92" rot="R90"/>
