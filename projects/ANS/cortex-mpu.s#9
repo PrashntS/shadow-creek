@@ -8808,6 +8808,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8852,9 +8853,8 @@ Circuitary</text>
 <text x="205.74" y="93.98" size="2.54" layer="95" align="center">LEDs</text>
 <wire x1="210.82" y1="96.52" x2="210.82" y2="63.5" width="0.1524" layer="95"/>
 <wire x1="210.82" y1="63.5" x2="195.58" y2="63.5" width="0.1524" layer="95"/>
-<wire x1="195.58" y1="63.5" x2="191.24395" y2="59.16395" width="0.1524" layer="95"/>
-<wire x1="191.24395" y1="59.16395" x2="190.5" y2="57.367896875" width="0.1524" layer="95" curve="45.00007"/>
-<wire x1="190.5" y1="57.367896875" x2="190.5" y2="25.4" width="0.1524" layer="95"/>
+<wire x1="195.58" y1="63.5" x2="190.5" y2="58.42" width="0.1524" layer="95"/>
+<wire x1="190.5" y1="58.42" x2="190.5" y2="25.4" width="0.1524" layer="95"/>
 <wire x1="190.5" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="95"/>
 <wire x1="152.4" y1="25.4" x2="152.4" y2="96.52" width="0.1524" layer="95"/>
 <wire x1="152.4" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="95"/>
@@ -8971,6 +8971,7 @@ I2C/TWI</text>
 <instance part="SUPPLY3" gate="G$1" x="160.02" y="127"/>
 <instance part="SUPPLY5" gate="G$1" x="200.66" y="78.74"/>
 <instance part="SUPPLY6" gate="G$1" x="236.22" y="35.56" rot="R180"/>
+<instance part="SUPPLY7" gate="G$1" x="10.16" y="162.56"/>
 </instances>
 <busses>
 <bus name="PA[0..27]">
@@ -9816,6 +9817,34 @@ I2C/TWI</text>
 <wire x1="236.22" y1="35.56" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
 <junction x="236.22" y="50.8"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
+<wire x1="10.16" y1="162.56" x2="10.16" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDANA"/>
+<wire x1="20.32" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIN"/>
+<wire x1="20.32" y1="157.48" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIO_2"/>
+<wire x1="20.32" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="157.48" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VDDIO_3"/>
+<wire x1="20.32" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="154.94" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
+<junction x="15.24" y="154.94"/>
+<wire x1="15.24" y1="152.4" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
+<junction x="15.24" y="152.4"/>
+<pinref part="U1" gate="A" pin="VDDIO"/>
+<wire x1="15.24" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="167.64" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
+<junction x="15.24" y="157.48"/>
+<pinref part="U1" gate="A" pin="ADVREF"/>
+<wire x1="15.24" y1="160.02" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="139.7" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="139.7" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
+<junction x="15.24" y="149.86"/>
+<wire x1="10.16" y1="160.02" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
+<junction x="15.24" y="160.02"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -9896,29 +9925,6 @@ I2C/TWI</text>
 <wire x1="106.68" y1="25.4" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
 <junction x="106.68" y="25.4"/>
 <label x="106.68" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="VDDANA"/>
-<wire x1="20.32" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VDDIN"/>
-<wire x1="20.32" y1="157.48" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VDDIO_2"/>
-<wire x1="20.32" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="157.48" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VDDIO_3"/>
-<wire x1="20.32" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="154.94" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
-<junction x="15.24" y="154.94"/>
-<wire x1="15.24" y1="152.4" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
-<junction x="15.24" y="152.4"/>
-<pinref part="U1" gate="A" pin="VDDIO"/>
-<wire x1="15.24" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="167.64" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
-<junction x="15.24" y="157.48"/>
-<pinref part="U1" gate="A" pin="ADVREF"/>
-<wire x1="20.32" y1="139.7" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="139.7" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
-<junction x="15.24" y="149.86"/>
 </segment>
 </net>
 <net name="VDDOUT" class="0">
