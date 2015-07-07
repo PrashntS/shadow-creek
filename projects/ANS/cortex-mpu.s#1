@@ -9538,11 +9538,11 @@ PWM</text>
 <wire x1="5.08" y1="170.18" x2="5.08" y2="63.5" width="0.1524" layer="95"/>
 <wire x1="5.08" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="95"/>
 <wire x1="96.52" y1="63.5" x2="96.52" y2="170.18" width="0.1524" layer="95"/>
-<text x="35.56" y="58.42" size="2.54" layer="95" align="center">Power</text>
+<text x="15.24" y="58.42" size="2.54" layer="95" rot="R180" align="center">Power</text>
 <wire x1="96.52" y1="60.96" x2="96.52" y2="35.56" width="0.1524" layer="95"/>
-<wire x1="96.52" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="95"/>
-<wire x1="27.94" y1="35.56" x2="27.94" y2="60.96" width="0.1524" layer="95"/>
-<wire x1="27.94" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="95"/>
+<wire x1="96.52" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="95"/>
+<wire x1="5.08" y1="35.56" x2="5.08" y2="60.96" width="0.1524" layer="95"/>
+<wire x1="5.08" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="95"/>
 <text x="15.24" y="68.58" size="2.54" layer="95" align="center">MCU</text>
 </plain>
 <instances>
@@ -9639,12 +9639,12 @@ PWM</text>
 <instance part="PA3" gate="P" x="111.76" y="48.26" rot="R270"/>
 <instance part="PA4" gate="P" x="116.84" y="48.26" rot="R270"/>
 <instance part="PA21" gate="P" x="101.6" y="48.26" rot="R270"/>
-<instance part="SUPPLY7" gate="G$1" x="30.48" y="48.26"/>
-<instance part="SUPPLY8" gate="G$1" x="35.56" y="48.26"/>
-<instance part="SUPPLY9" gate="G$1" x="40.64" y="48.26"/>
-<instance part="SUPPLY10" gate="G$1" x="45.72" y="48.26"/>
-<instance part="SUPPLY11" gate="G$1" x="50.8" y="48.26"/>
-<instance part="SUPPLY12" gate="G$1" x="55.88" y="48.26"/>
+<instance part="SUPPLY7" gate="G$1" x="17.78" y="48.26"/>
+<instance part="SUPPLY8" gate="G$1" x="22.86" y="48.26"/>
+<instance part="SUPPLY9" gate="G$1" x="27.94" y="48.26"/>
+<instance part="SUPPLY10" gate="G$1" x="33.02" y="48.26"/>
+<instance part="SUPPLY11" gate="G$1" x="38.1" y="48.26"/>
+<instance part="SUPPLY12" gate="G$1" x="43.18" y="48.26"/>
 <instance part="SJ4" gate="G$1" x="68.58" y="48.26" rot="R90"/>
 <instance part="SJ5" gate="G$1" x="73.66" y="48.26" rot="R90"/>
 <instance part="SJ6" gate="G$1" x="78.74" y="48.26" rot="R90"/>
@@ -10516,8 +10516,8 @@ PWM</text>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<wire x1="30.48" y1="48.26" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
-<label x="30.48" y="38.1" size="1.778" layer="95"/>
+<wire x1="17.78" y1="48.26" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
+<label x="17.78" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDDIN" class="0">
@@ -10539,8 +10539,8 @@ PWM</text>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
-<wire x1="35.56" y1="48.26" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
-<label x="35.56" y="40.64" size="1.778" layer="95"/>
+<wire x1="22.86" y1="48.26" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<label x="22.86" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDDOUT" class="0">
@@ -10744,8 +10744,8 @@ PWM</text>
 </segment>
 <segment>
 <pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
-<wire x1="45.72" y1="48.26" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
-<label x="45.72" y="38.1" size="1.778" layer="95"/>
+<wire x1="33.02" y1="48.26" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
+<label x="33.02" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDDIO1" class="0">
@@ -10761,8 +10761,8 @@ PWM</text>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="G$1" pin="VCC"/>
-<wire x1="50.8" y1="48.26" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<label x="50.8" y="40.64" size="1.778" layer="95"/>
+<wire x1="38.1" y1="48.26" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<label x="38.1" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDDIO2" class="0">
@@ -10778,8 +10778,8 @@ PWM</text>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="G$1" pin="VCC"/>
-<wire x1="55.88" y1="48.26" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
-<label x="55.88" y="43.18" size="1.778" layer="95"/>
+<wire x1="43.18" y1="48.26" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
+<label x="43.18" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADVREF" class="0">
@@ -10801,8 +10801,8 @@ PWM</text>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
-<wire x1="40.64" y1="48.26" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-<label x="40.64" y="43.18" size="1.778" layer="95"/>
+<wire x1="27.94" y1="48.26" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<label x="27.94" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
