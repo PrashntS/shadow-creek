@@ -9428,13 +9428,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C11" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
+<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
+<part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1nF"/>
+<part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7uF"/>
+<part name="C11" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="470pF"/>
+<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="2.2uF"/>
+<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1uF"/>
+<part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -10816,6 +10816,57 @@ PWM</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,17.78,48.26,VCC,VDDANA,,,,"/>
+<approved hash="102,1,22.86,48.26,VCC,VDDIN,,,,"/>
+<approved hash="102,1,27.94,48.26,VCC,ADVREF,,,,"/>
+<approved hash="102,1,33.02,48.26,VCC,VDDIO0,,,,"/>
+<approved hash="102,1,38.1,48.26,VCC,VDDIO1,,,,"/>
+<approved hash="102,1,43.18,48.26,VCC,VDDIO2,,,,"/>
+<approved hash="201,1,43.18,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,38.1,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,33.02,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,27.94,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,22.86,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,17.78,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="104,1,27.94,152.4,U1,VDDCORE_2,VDDCORE1,,,"/>
+<approved hash="104,1,27.94,149.86,U1,VDDCORE_3,VDDCORE2,,,"/>
+<approved hash="104,1,27.94,147.32,U1,VDDCORE,VDDCORE0,,,"/>
+<approved hash="104,1,27.94,142.24,U1,VDDIO_2,VDDIO1,,,"/>
+<approved hash="104,1,27.94,139.7,U1,VDDIO_3,VDDIO2,,,"/>
+<approved hash="104,1,27.94,137.16,U1,VDDIO,VDDIO0,,,"/>
+<approved hash="202,1,27.94,121.92,U1,TCK,,,,"/>
+<approved hash="202,1,27.94,119.38,U1,VBUS,,,,"/>
+<approved hash="106,1,68.58,147.32,PA0,,,,,"/>
+<approved hash="106,1,68.58,144.78,PA1,,,,,"/>
+<approved hash="106,1,68.58,142.24,PA2,,,,,"/>
+<approved hash="106,1,68.58,132.08,PA6,,,,,"/>
+<approved hash="106,1,68.58,119.38,PA11,,,,,"/>
+<approved hash="106,1,68.58,116.84,PA12,,,,,"/>
+<approved hash="106,1,68.58,104.14,PA17,,,,,"/>
+<approved hash="106,1,68.58,96.52,PA20,,,,,"/>
+<approved hash="106,1,68.58,88.9,PA23,,,,,"/>
+<approved hash="106,1,68.58,86.36,PA24,,,,,"/>
+<approved hash="106,1,68.58,78.74,PA27,,,,,"/>
+<approved hash="111,1,129.54,68.58,N$15,,,,,"/>
+<approved hash="111,1,132.08,68.58,N$9,,,,,"/>
+<approved hash="111,1,129.54,73.66,N$15,,,,,"/>
+<approved hash="111,1,132.08,73.66,N$9,,,,,"/>
+<approved hash="113,1,251.203,113.072,JP3,,,,,"/>
+<approved hash="113,1,241.977,42.9853,JP2,,,,,"/>
+<approved hash="113,1,124.608,96.52,U2,,,,,"/>
+<approved hash="113,1,138.333,119.659,PAD9,,,,,"/>
+<approved hash="113,1,140.873,119.271,PAD10,,,,,"/>
+<approved hash="113,1,133.253,119.659,PAD8,,,,,"/>
+<approved hash="113,1,120.553,162.839,PAD5,,,,,"/>
+<approved hash="113,1,123.093,162.839,PAD6,,,,,"/>
+<approved hash="113,1,125.633,162.839,PAD7,,,,,"/>
+<approved hash="113,1,140.377,40.4453,JP1,,,,,"/>
+<approved hash="113,1,107.853,45.9994,PAD2,,,,,"/>
+<approved hash="113,1,112.933,45.9994,PAD3,,,,,"/>
+<approved hash="113,1,118.013,45.9994,PAD4,,,,,"/>
+<approved hash="113,1,102.773,45.9994,PAD1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

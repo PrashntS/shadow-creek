@@ -9543,6 +9543,7 @@ PWM</text>
 <wire x1="96.52" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="95"/>
 <wire x1="27.94" y1="35.56" x2="27.94" y2="60.96" width="0.1524" layer="95"/>
 <wire x1="27.94" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="95"/>
+<text x="15.24" y="68.58" size="2.54" layer="95" align="center">MCU</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="-2.54"/>

@@ -9354,7 +9354,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
+<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="">
+<attribute name="CNAME" value="AVR32 and MPU Interface"/>
+<attribute name="CREVISION" value="1"/>
+<attribute name="DESIGNER" value="Prashant Sinha"/>
+</part>
 <part name="JP2" library="SparkFun-Connectors" deviceset="USB_MICROB_PLUG" device="CONN-11752"/>
 <part name="U1" library="Atmel_By_element14_Batch_1-00" deviceset="AT32UC3B164-AUT" device=""/>
 <part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="39R"/>
@@ -9546,7 +9550,11 @@ PWM</text>
 <text x="15.24" y="68.58" size="2.54" layer="95" align="center">MCU</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="-2.54"/>
+<instance part="FRAME1" gate="G$1" x="0" y="-2.54">
+<attribute name="CNAME" x="0" y="-2.54" size="1.778" layer="96" display="off"/>
+<attribute name="DESIGNER" x="0" y="-2.54" size="1.778" layer="96" display="off"/>
+<attribute name="CREVISION" x="0" y="-2.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="JP2" gate="G$1" x="251.46" y="111.76"/>
 <instance part="U1" gate="A" x="48.26" y="119.38"/>
 <instance part="R12" gate="G$1" x="231.14" y="121.92" rot="R90"/>
