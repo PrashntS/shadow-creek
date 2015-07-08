@@ -7241,6 +7241,22 @@ chip</description>
 <text x="-7" y="7.5" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-7" y="-8.5" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
+<package name="PAD.02X.02">
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.04">
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP_15TH">
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -7310,6 +7326,13 @@ chip</description>
 <text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="TEST-POINT">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7922,6 +7945,54 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-11157" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="TP">
+<description>Bare copper test points for troubleshooting or ICT</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X4" package="PAD.03X.04">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TP_15TH_THRU" package="TP_15TH">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9428,13 +9499,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C11" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
+<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
+<part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1nF"/>
+<part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7uF"/>
+<part name="C11" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="470pF"/>
+<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="2.2uF"/>
+<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1uF"/>
+<part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -9447,10 +9518,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
-<part name="PAD2" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD3" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD4" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD1" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -9461,6 +9528,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value=""/>
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value=""/>
 <part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value=""/>
+<part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="2" value=""/>
+<part name="TP2" library="SparkFun-Passives" deviceset="TEST-POINT" device="2" value=""/>
+<part name="TP3" library="SparkFun-Passives" deviceset="TEST-POINT" device="2" value=""/>
+<part name="TP4" library="SparkFun-Passives" deviceset="TEST-POINT" device="2" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9643,10 +9714,6 @@ PWM</text>
 <instance part="GND10" gate="1" x="91.44" y="7.62"/>
 <instance part="GND11" gate="1" x="104.14" y="7.62"/>
 <instance part="JP1" gate="G$1" x="144.78" y="43.18" rot="R180"/>
-<instance part="PAD2" gate="P" x="106.68" y="48.26" rot="R270"/>
-<instance part="PAD3" gate="P" x="111.76" y="48.26" rot="R270"/>
-<instance part="PAD4" gate="P" x="116.84" y="48.26" rot="R270"/>
-<instance part="PAD1" gate="P" x="101.6" y="48.26" rot="R270"/>
 <instance part="SUPPLY1" gate="G$1" x="17.78" y="48.26"/>
 <instance part="SUPPLY2" gate="G$1" x="22.86" y="48.26"/>
 <instance part="SUPPLY3" gate="G$1" x="27.94" y="48.26"/>
@@ -9657,6 +9724,10 @@ PWM</text>
 <instance part="SJ2" gate="G$1" x="73.66" y="48.26" rot="R90"/>
 <instance part="SJ3" gate="G$1" x="78.74" y="48.26" rot="R90"/>
 <instance part="SJ4" gate="G$1" x="83.82" y="48.26" rot="R90"/>
+<instance part="TP1" gate="G$1" x="101.6" y="45.72" rot="R90"/>
+<instance part="TP2" gate="G$1" x="106.68" y="45.72" rot="R90"/>
+<instance part="TP3" gate="G$1" x="111.76" y="45.72" rot="R90"/>
+<instance part="TP4" gate="G$1" x="116.84" y="45.72" rot="R90"/>
 </instances>
 <busses>
 <bus name="PA[0..27]">
@@ -9757,8 +9828,8 @@ PWM</text>
 </segment>
 <segment>
 <wire x1="114.3" y1="40.64" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PAD3" gate="P" pin="P"/>
 <wire x1="111.76" y1="43.18" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PA4" class="0">
@@ -9770,8 +9841,8 @@ PWM</text>
 </segment>
 <segment>
 <wire x1="119.38" y1="40.64" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PAD4" gate="P" pin="P"/>
 <wire x1="116.84" y1="43.18" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="TP4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PA5" class="0">
@@ -10036,8 +10107,8 @@ PWM</text>
 </segment>
 <segment>
 <wire x1="104.14" y1="40.64" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="P" pin="P"/>
 <wire x1="101.6" y1="43.18" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PA22" class="0">
@@ -10055,8 +10126,8 @@ PWM</text>
 </segment>
 <segment>
 <wire x1="109.22" y1="40.64" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PAD2" gate="P" pin="P"/>
 <wire x1="106.68" y1="43.18" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PA23" class="0">
@@ -10816,6 +10887,57 @@ PWM</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,17.78,48.26,VCC,VDDANA,,,,"/>
+<approved hash="102,1,22.86,48.26,VCC,VDDIN,,,,"/>
+<approved hash="102,1,27.94,48.26,VCC,ADVREF,,,,"/>
+<approved hash="102,1,33.02,48.26,VCC,VDDIO0,,,,"/>
+<approved hash="102,1,38.1,48.26,VCC,VDDIO1,,,,"/>
+<approved hash="102,1,43.18,48.26,VCC,VDDIO2,,,,"/>
+<approved hash="201,1,43.18,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,38.1,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,33.02,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,27.94,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,22.86,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="201,1,17.78,48.26,VCC,VCC\, VDDANA\, VDDIN\, ADVREF\, VDDIO0\, VDDIO1\, VDDIO2,,,,"/>
+<approved hash="104,1,27.94,152.4,U1,VDDCORE_2,VDDCORE1,,,"/>
+<approved hash="104,1,27.94,149.86,U1,VDDCORE_3,VDDCORE2,,,"/>
+<approved hash="104,1,27.94,147.32,U1,VDDCORE,VDDCORE0,,,"/>
+<approved hash="104,1,27.94,142.24,U1,VDDIO_2,VDDIO1,,,"/>
+<approved hash="104,1,27.94,139.7,U1,VDDIO_3,VDDIO2,,,"/>
+<approved hash="104,1,27.94,137.16,U1,VDDIO,VDDIO0,,,"/>
+<approved hash="202,1,27.94,121.92,U1,TCK,,,,"/>
+<approved hash="202,1,27.94,119.38,U1,VBUS,,,,"/>
+<approved hash="106,1,68.58,147.32,PA0,,,,,"/>
+<approved hash="106,1,68.58,144.78,PA1,,,,,"/>
+<approved hash="106,1,68.58,142.24,PA2,,,,,"/>
+<approved hash="106,1,68.58,132.08,PA6,,,,,"/>
+<approved hash="106,1,68.58,119.38,PA11,,,,,"/>
+<approved hash="106,1,68.58,116.84,PA12,,,,,"/>
+<approved hash="106,1,68.58,104.14,PA17,,,,,"/>
+<approved hash="106,1,68.58,96.52,PA20,,,,,"/>
+<approved hash="106,1,68.58,88.9,PA23,,,,,"/>
+<approved hash="106,1,68.58,86.36,PA24,,,,,"/>
+<approved hash="106,1,68.58,78.74,PA27,,,,,"/>
+<approved hash="111,1,129.54,68.58,N$15,,,,,"/>
+<approved hash="111,1,132.08,68.58,N$9,,,,,"/>
+<approved hash="111,1,129.54,73.66,N$15,,,,,"/>
+<approved hash="111,1,132.08,73.66,N$9,,,,,"/>
+<approved hash="113,1,251.203,113.072,JP3,,,,,"/>
+<approved hash="113,1,241.977,42.9853,JP2,,,,,"/>
+<approved hash="113,1,124.608,96.52,U2,,,,,"/>
+<approved hash="113,1,138.333,119.659,PAD9,,,,,"/>
+<approved hash="113,1,140.873,119.271,PAD10,,,,,"/>
+<approved hash="113,1,133.253,119.659,PAD8,,,,,"/>
+<approved hash="113,1,120.553,162.839,PAD5,,,,,"/>
+<approved hash="113,1,123.093,162.839,PAD6,,,,,"/>
+<approved hash="113,1,125.633,162.839,PAD7,,,,,"/>
+<approved hash="113,1,140.377,40.4453,JP1,,,,,"/>
+<approved hash="113,1,107.853,45.9994,PAD2,,,,,"/>
+<approved hash="113,1,112.933,45.9994,PAD3,,,,,"/>
+<approved hash="113,1,118.013,45.9994,PAD4,,,,,"/>
+<approved hash="113,1,102.773,45.9994,PAD1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
