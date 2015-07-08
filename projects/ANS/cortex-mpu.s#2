@@ -9189,6 +9189,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-12.7" y="17.78" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MPU-9250">
+<pin name="RESV" x="0" y="12.7" length="middle"/>
+<pin name="AUX_CL" x="33.02" y="12.7" length="middle" rot="R180"/>
+<pin name="VDDIO" x="0" y="10.16" length="middle"/>
+<pin name="AD0/SDO" x="33.02" y="10.16" length="middle" rot="R180"/>
+<pin name="REGOUT" x="0" y="5.08" length="middle"/>
+<pin name="FSYNC" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="INT" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="VDD" x="0" y="7.62" length="middle"/>
+<pin name="GND" x="0" y="0" length="middle"/>
+<pin name="AUX_DA" x="33.02" y="7.62" length="middle" rot="R180"/>
+<pin name="NCS" x="33.02" y="5.08" length="middle" rot="R180"/>
+<pin name="SCL/SCLK" x="33.02" y="2.54" length="middle" rot="R180"/>
+<pin name="SDA/SDI" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="NC" x="0" y="-7.62" length="middle"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="27.94" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-10.16" x2="27.94" y2="15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MPU-9150" prefix="U" uservalue="yes">
@@ -9216,6 +9236,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="VDD@13" pad="13"/>
 <connect gate="G$1" pin="VDD@3" pad="3"/>
 <connect gate="G$1" pin="VLOGIC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MPU-9250">
+<gates>
+<gate name="G$1" symbol="MPU-9250" x="-5.08" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="QFN-24-NP">
+<connects>
+<connect gate="G$1" pin="AD0/SDO" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="21"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND" pad="18 20"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="NC" pad="2 3 4 5 6 14 15 16 17 19"/>
+<connect gate="G$1" pin="NCS" pad="22"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV" pad="1"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
+<connect gate="G$1" pin="SDA/SDI" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VDDIO" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9380,6 +9428,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$2" library="ANS" deviceset="JUNCTION" device=""/>
 <part name="U$3" library="ANS" deviceset="JUNCTION" device=""/>
 <part name="U$4" library="ANS" deviceset="JUNCTION" device=""/>
+<part name="U$5" library="SparkFun-Sensors" deviceset="MPU-9250" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9573,6 +9622,7 @@ PWM</text>
 <instance part="U$2" gate="G$1" x="73.66" y="48.26"/>
 <instance part="U$3" gate="G$1" x="78.74" y="48.26"/>
 <instance part="U$4" gate="G$1" x="83.82" y="48.26"/>
+<instance part="U$5" gate="G$1" x="332.74" y="91.44"/>
 </instances>
 <busses>
 <bus name="PA[0..27]">
