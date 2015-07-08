@@ -1101,6 +1101,12 @@ design rules under a new name.</description>
 </element>
 <element name="U2" library="SparkFun-Sensors" package="QFN-24-NP" value="" x="21.59" y="7.62"/>
 <element name="Y1" library="SparkFun-FreqCtrl" package="CRYSTAL-TXC-7A" value="7A-16" x="-39.37" y="35.56"/>
+<element name="U$5" library="SparkFun-Sensors" package="QFN-24-NP" value="MPU-9250" x="-64.77" y="5.08"/>
+<element name="C26" library="SparkFun-Passives" package="0603-CAP" value="" x="-66.04" y="-2.54"/>
+<element name="C27" library="SparkFun-Passives" package="0603-CAP" value="" x="-66.04" y="-5.08"/>
+<element name="C28" library="SparkFun-Passives" package="0603-CAP" value="" x="-66.04" y="-7.62"/>
+<element name="R13" library="SparkFun-Passives" package="0603-RES" value="10kR" x="-66.04" y="-10.16"/>
+<element name="R14" library="SparkFun-Passives" package="0603-RES" value="10kR" x="-66.04" y="-13.97"/>
 </elements>
 <signals>
 <signal name="DM">
@@ -1136,8 +1142,10 @@ design rules under a new name.</description>
 <contactref element="U1" pad="9"/>
 <contactref element="U2" pad="12"/>
 <contactref element="TP7" pad="P$1"/>
-<wire x1="14.9352" y1="21.6154" x2="7.62" y2="50.8" width="0" layer="19" extent="1-1"/>
+<contactref element="U$5" pad="12"/>
+<wire x1="14.9352" y1="21.6154" x2="-63.52" y2="3.08" width="0" layer="19" extent="1-1"/>
 <wire x1="22.84" y1="5.62" x2="14.9352" y2="21.6154" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="50.8" x2="14.9352" y2="21.6154" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA6">
 <contactref element="U1" pad="10"/>
@@ -1168,7 +1176,11 @@ design rules under a new name.</description>
 <wire x1="23.71" y1="13.55" x2="22.86" y2="12.7" width="0.254" layer="1"/>
 <wire x1="22.86" y1="12.7" x2="21.59" y2="12.7" width="0.254" layer="1"/>
 <wire x1="24.13" y1="12.7" x2="24.13" y2="13.55" width="0.254" layer="1"/>
-<wire x1="-48.26" y1="36.437" x2="19.812" y2="18.7452" width="0" layer="19" extent="1-1"/>
+<contactref element="U$5" pad="23"/>
+<contactref element="R13" pad="1"/>
+<wire x1="-65.52" y1="7.08" x2="-66.89" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-48.26" y1="36.437" x2="-65.52" y2="7.08" width="0" layer="19" extent="1-1"/>
+<wire x1="19.812" y1="18.7452" x2="-48.26" y2="36.437" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA10">
 <contactref element="U1" pad="21"/>
@@ -1188,6 +1200,10 @@ design rules under a new name.</description>
 <wire x1="25.4" y1="13.55" x2="23.28" y2="13.55" width="0.254" layer="16"/>
 <wire x1="23.28" y1="13.55" x2="22.86" y2="13.97" width="0.254" layer="16"/>
 <wire x1="21.59" y1="15.24" x2="22.225" y2="15.875" width="0.254" layer="1"/>
+<contactref element="U$5" pad="24"/>
+<contactref element="R14" pad="1"/>
+<wire x1="-66.02" y1="7.08" x2="-66.89" y2="-13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="20.34" y1="9.62" x2="-66.02" y2="7.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA11">
 <contactref element="U1" pad="22"/>
@@ -1656,6 +1672,26 @@ design rules under a new name.</description>
 <signal name="N$12">
 </signal>
 <signal name="N$13">
+</signal>
+<signal name="N$15">
+<contactref element="R13" pad="2"/>
+<contactref element="R14" pad="2"/>
+<wire x1="-65.19" y1="-10.16" x2="-65.19" y2="-13.97" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$17">
+<contactref element="U$5" pad="10"/>
+<contactref element="C28" pad="1"/>
+<wire x1="-64.52" y1="3.08" x2="-66.89" y2="-7.62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="U$5" pad="13"/>
+<contactref element="C27" pad="1"/>
+<wire x1="-62.77" y1="3.83" x2="-66.89" y2="-5.08" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$19">
+<contactref element="U$5" pad="8"/>
+<contactref element="C26" pad="1"/>
+<wire x1="-65.52" y1="3.08" x2="-66.89" y2="-2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
