@@ -9343,8 +9343,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C17" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="2.2nF"/>
 <part name="C16" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="C15" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
-<part name="SJ7" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value="SPK"/>
-<part name="SJ6" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value="SPK"/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S-COPPER"/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="3.3uH"/>
@@ -9538,8 +9536,6 @@ PWM</text>
 <instance part="C17" gate="G$1" x="132.08" y="73.66" rot="R90"/>
 <instance part="C16" gate="G$1" x="114.3" y="144.78" rot="R90"/>
 <instance part="C15" gate="G$1" x="114.3" y="152.4" rot="R90"/>
-<instance part="SJ7" gate="G$1" x="137.16" y="58.42" rot="R180"/>
-<instance part="SJ6" gate="G$1" x="137.16" y="63.5" rot="R180"/>
 <instance part="GND12" gate="1" x="144.78" y="157.48" rot="R90"/>
 <instance part="LOGO1" gate="G$1" x="165.1" y="12.7"/>
 <instance part="L1" gate="G$1" x="132.08" y="17.78"/>
@@ -10160,11 +10156,7 @@ PWM</text>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="142.24" y1="157.48" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="SJ7" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="58.42" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="SJ6" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="63.5" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
 <junction x="144.78" y="63.5"/>
 <pinref part="C17" gate="G$1" pin="2"/>
@@ -10203,6 +10195,12 @@ PWM</text>
 <wire x1="129.54" y1="132.08" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
 <junction x="144.78" y="139.7"/>
+<pinref part="U2" gate="G$1" pin="CLKIN"/>
+<wire x1="132.08" y1="78.74" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="FSYNC"/>
+<wire x1="129.54" y1="78.74" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -10599,21 +10597,6 @@ PWM</text>
 <pinref part="U2" gate="G$1" pin="CLKOUT"/>
 <wire x1="127" y1="114.3" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="TP8" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="CLKIN"/>
-<pinref part="SJ6" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="78.74" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="FSYNC"/>
-<wire x1="129.54" y1="78.74" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="SJ7" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDDCORE2" class="0">

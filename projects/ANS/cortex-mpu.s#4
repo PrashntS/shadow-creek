@@ -9288,7 +9288,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="IC1" library="lm1117" deviceset="LM1117MPX-*" device="" technology="3.3"/>
 <part name="C21" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10uF"/>
 <part name="C24" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10uF"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="LOCK_LONGPADS"/>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="LOCK"/>
 <part name="C23" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="TXC-7A" value="7A-16"/>
 <part name="C22" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="22pF"/>
