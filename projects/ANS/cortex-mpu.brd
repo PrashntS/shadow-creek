@@ -74,7 +74,7 @@
 <layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
@@ -138,10 +138,24 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="-2.54" x2="100" y2="-2.54" width="0" layer="20"/>
-<wire x1="100" y1="-2.54" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="-2.54" width="0" layer="20"/>
+<wire x1="38.985475" y1="37.465" x2="26.933025" y2="37.465" width="0" layer="20"/>
+<wire x1="26.933025" y1="37.465" x2="26.035" y2="36.566975" width="0" layer="20"/>
+<wire x1="26.035" y1="36.566975" x2="26.035" y2="35.823025" width="0" layer="20"/>
+<wire x1="26.035" y1="35.823025" x2="25.136975" y2="34.925" width="0" layer="20"/>
+<wire x1="25.136975" y1="34.925" x2="9.274525" y2="34.925" width="0" layer="20"/>
+<wire x1="9.274525" y1="34.925" x2="6.985" y2="32.635475" width="0" layer="20"/>
+<wire x1="6.985" y1="32.635475" x2="6.985" y2="0.078171875" width="0" layer="20"/>
+<wire x1="6.985" y1="0.078171875" x2="9.603171875" y2="-2.54" width="0" layer="20"/>
+<wire x1="9.603171875" y1="-2.54" x2="38.580925" y2="-2.54" width="0" layer="20"/>
+<wire x1="38.580925" y1="-2.54" x2="41.275" y2="0.154075" width="0" layer="20"/>
+<wire x1="41.275" y1="0.154075" x2="41.275" y2="35.175475" width="0" layer="20"/>
+<wire x1="41.275" y1="35.175475" x2="38.985475" y2="37.465" width="0" layer="20"/>
+<text x="10.16" y="5.08" size="0.6096" layer="112" font="vector" ratio="15" rot="R90" align="center">WARNING
+This part of the board
+may get very hot.</text>
+<hole x="10.16" y="33.02" drill="0.508"/>
+<hole x="8.89" y="31.75" drill="0.508"/>
+<hole x="9.525" y="0" drill="0.508"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
@@ -1030,7 +1044,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-11752" x="38.735" y="31.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="L1" library="SparkFun-Passives" package="0603" value="3.3uH" x="13.97" y="12.7" rot="R45"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S_COPPER" value="OSHW-LOGOS-COPPER" x="7.925" y="43.84"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S_COPPER" value="OSHW-LOGOS-COPPER" x="36.5" y="31.775"/>
 <element name="R10" library="SparkFun-Passives" package="0603-RES" value="1kR" x="27.94" y="28.575"/>
 <element name="R11" library="SparkFun-Passives" package="0603-RES" value="39R" x="27.94" y="29.845" rot="R180"/>
 <element name="R12" library="SparkFun-Passives" package="0603-RES" value="39R" x="27.94" y="31.115" rot="R180"/>
@@ -1859,4 +1873,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
