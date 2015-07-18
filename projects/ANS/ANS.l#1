@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -65,36 +65,6 @@
 <wire x1="0.75" y1="-0.5" x2="0.75" y2="0.5" width="0.127" layer="21"/>
 <wire x1="0.75" y1="0.5" x2="-0.75" y2="0.5" width="0.127" layer="21"/>
 <text x="-0.75" y="0.75" size="0.3048" layer="25">&gt;NAME</text>
-</package>
-<package name="QFN-24-3MM">
-<smd name="P$2" x="-1.7" y="-0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$3" x="-1.7" y="0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$4" x="-1.7" y="0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="-1.7" y="1" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$6" x="-1.7" y="-0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$7" x="-1.7" y="-1" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$8" x="-1" y="-1.7" dx="0.2" dy="1" layer="1"/>
-<smd name="P$9" x="-0.6" y="-1.7" dx="0.2" dy="1" layer="1"/>
-<smd name="P$10" x="-0.2" y="-1.7" dx="0.2" dy="1" layer="1"/>
-<smd name="P$11" x="0.2" y="-1.7" dx="0.2" dy="1" layer="1"/>
-<smd name="P$12" x="0.6" y="-1.7" dx="0.2" dy="1" layer="1"/>
-<smd name="P$13" x="1" y="-1.7" dx="0.2" dy="1" layer="1"/>
-<smd name="P$14" x="1.7" y="-1" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$15" x="1.7" y="-0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$16" x="1.7" y="-0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$17" x="1.7" y="0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$18" x="1.7" y="0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$19" x="1.7" y="1" dx="0.2" dy="1" layer="1" rot="R90"/>
-<smd name="P$20" x="-1" y="1.7" dx="0.2" dy="1" layer="1" rot="R180"/>
-<smd name="P$21" x="-0.6" y="1.7" dx="0.2" dy="1" layer="1" rot="R180"/>
-<smd name="P$22" x="-0.2" y="1.7" dx="0.2" dy="1" layer="1" rot="R180"/>
-<smd name="P$23" x="0.2" y="1.7" dx="0.2" dy="1" layer="1" rot="R180"/>
-<smd name="P$24" x="0.6" y="1.7" dx="0.2" dy="1" layer="1" rot="R180"/>
-<smd name="P$25" x="1" y="1.7" dx="0.2" dy="1" layer="1" rot="R180"/>
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.01" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.01" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.01" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.01" layer="21"/>
 </package>
 </packages>
 <symbols>
