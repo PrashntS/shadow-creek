@@ -8377,118 +8377,6 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Sensors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="QFN-24-NP">
-<wire x1="1.65" y1="-2" x2="2" y2="-2" width="0.2032" layer="21"/>
-<wire x1="2" y1="-1.65" x2="2" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-1.65" y1="-2" x2="-2" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-2" y1="-2" x2="-2" y2="-1.65" width="0.2032" layer="21"/>
-<wire x1="2" y1="1.65" x2="2" y2="2" width="0.2032" layer="21"/>
-<wire x1="2" y1="2" x2="1.65" y2="2" width="0.2032" layer="21"/>
-<wire x1="-1.65" y1="2" x2="-2" y2="1.65" width="0.2032" layer="21"/>
-<wire x1="-1.016" y1="0.508" x2="-1.016" y2="-0.889" width="0.0762" layer="51"/>
-<wire x1="-1.016" y1="-0.889" x2="1.016" y2="-0.889" width="0.0762" layer="51"/>
-<wire x1="1.143" y1="1.143" x2="0.635" y2="1.143" width="0.0762" layer="51" curve="-270"/>
-<wire x1="1.143" y1="1.143" x2="1.0668" y2="0.9144" width="0.0762" layer="51"/>
-<wire x1="1.143" y1="1.143" x2="1.397" y2="1.0414" width="0.0762" layer="51"/>
-<wire x1="-0.7874" y1="-0.3048" x2="-0.7874" y2="0.0762" width="0.0762" layer="51" curve="-280.388858"/>
-<wire x1="-0.7874" y1="0.2794" x2="-0.7874" y2="0.0762" width="0.0762" layer="51"/>
-<wire x1="-0.7874" y1="0.0762" x2="-0.889" y2="-0.0254" width="0.0762" layer="51"/>
-<wire x1="0.5334" y1="-1.1176" x2="0.508" y2="-0.635" width="0.0762" layer="51" curve="-248.760689"/>
-<wire x1="0.381" y1="-1.016" x2="0.5334" y2="-1.1176" width="0.0762" layer="51"/>
-<wire x1="0.5334" y1="-1.1176" x2="0.4826" y2="-1.2954" width="0.0762" layer="51"/>
-<smd name="1" x="-2" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
-<smd name="2" x="-2" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
-<smd name="3" x="-2" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
-<smd name="4" x="-2" y="-0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
-<smd name="5" x="-2" y="-0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
-<smd name="6" x="-2" y="-1.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
-<smd name="7" x="-1.25" y="-2" dx="0.8" dy="0.3" layer="1" rot="R90"/>
-<smd name="8" x="-0.75" y="-2" dx="0.8" dy="0.3" layer="1" rot="R90"/>
-<smd name="9" x="-0.25" y="-2" dx="0.8" dy="0.3" layer="1" rot="R90"/>
-<smd name="10" x="0.25" y="-2" dx="0.8" dy="0.3" layer="1" rot="R90"/>
-<smd name="11" x="0.75" y="-2" dx="0.8" dy="0.3" layer="1" rot="R90"/>
-<smd name="12" x="1.25" y="-2" dx="0.8" dy="0.3" layer="1" rot="R90"/>
-<smd name="13" x="2" y="-1.25" dx="0.8" dy="0.3" layer="1"/>
-<smd name="14" x="2" y="-0.75" dx="0.8" dy="0.3" layer="1"/>
-<smd name="15" x="2" y="-0.25" dx="0.8" dy="0.3" layer="1"/>
-<smd name="16" x="2" y="0.25" dx="0.8" dy="0.3" layer="1"/>
-<smd name="17" x="2" y="0.75" dx="0.8" dy="0.3" layer="1"/>
-<smd name="18" x="2" y="1.25" dx="0.8" dy="0.3" layer="1"/>
-<smd name="19" x="1.25" y="2" dx="0.8" dy="0.3" layer="1" rot="R270"/>
-<smd name="20" x="0.75" y="2" dx="0.8" dy="0.3" layer="1" rot="R270"/>
-<smd name="21" x="0.25" y="2" dx="0.8" dy="0.3" layer="1" rot="R270"/>
-<smd name="22" x="-0.25" y="2" dx="0.8" dy="0.3" layer="1" rot="R270"/>
-<smd name="23" x="-0.75" y="2" dx="0.8" dy="0.3" layer="1" rot="R270"/>
-<smd name="24" x="-1.25" y="2" dx="0.8" dy="0.3" layer="1" rot="R270"/>
-<text x="-2.45" y="2.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.5" y="-4.15" size="1.27" layer="27">&gt;VALUE</text>
-<text x="1.1176" y="-1.1938" size="0.4064" layer="51">X</text>
-<text x="-1.2192" y="0.6604" size="0.4064" layer="51">Y</text>
-<text x="0" y="0.8636" size="0.4064" layer="51">Z</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MPU-9250">
-<pin name="RESV" x="0" y="12.7" length="middle"/>
-<pin name="AUX_CL" x="33.02" y="12.7" length="middle" rot="R180"/>
-<pin name="VDDIO" x="0" y="10.16" length="middle"/>
-<pin name="AD0/SDO" x="33.02" y="10.16" length="middle" rot="R180"/>
-<pin name="REGOUT" x="0" y="5.08" length="middle"/>
-<pin name="FSYNC" x="33.02" y="-2.54" length="middle" rot="R180"/>
-<pin name="INT" x="33.02" y="-7.62" length="middle" rot="R180"/>
-<pin name="VDD" x="0" y="7.62" length="middle"/>
-<pin name="GND" x="0" y="0" length="middle"/>
-<pin name="AUX_DA" x="33.02" y="7.62" length="middle" rot="R180"/>
-<pin name="NCS" x="33.02" y="5.08" length="middle" rot="R180"/>
-<pin name="SCL/SCLK" x="33.02" y="2.54" length="middle" rot="R180"/>
-<pin name="SDA/SDI" x="33.02" y="0" length="middle" rot="R180"/>
-<pin name="NC" x="0" y="-7.62" length="middle"/>
-<wire x1="5.08" y1="15.24" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="27.94" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-10.16" x2="27.94" y2="15.24" width="0.254" layer="94"/>
-<wire x1="27.94" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MPU-9250">
-<gates>
-<gate name="G$1" symbol="MPU-9250" x="-5.08" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="QFN-24-NP">
-<connects>
-<connect gate="G$1" pin="AD0/SDO" pad="9"/>
-<connect gate="G$1" pin="AUX_CL" pad="7"/>
-<connect gate="G$1" pin="AUX_DA" pad="21"/>
-<connect gate="G$1" pin="FSYNC" pad="11"/>
-<connect gate="G$1" pin="GND" pad="18 20"/>
-<connect gate="G$1" pin="INT" pad="12"/>
-<connect gate="G$1" pin="NC" pad="2 3 4 5 6 14 15 16 17 19"/>
-<connect gate="G$1" pin="NCS" pad="22"/>
-<connect gate="G$1" pin="REGOUT" pad="10"/>
-<connect gate="G$1" pin="RESV" pad="1"/>
-<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
-<connect gate="G$1" pin="SDA/SDI" pad="24"/>
-<connect gate="G$1" pin="VDD" pad="13"/>
-<connect gate="G$1" pin="VDDIO" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="ANS">
 <packages>
 <package name="JUN-2">
@@ -8521,6 +8409,113 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="cortex-mpu">
+<description>Generated from &lt;b&gt;cortex-mpu.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="QFN-24-3MM">
+<wire x1="1.35" y1="-1.7" x2="1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="-1.35" x2="1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.35" y1="-1.7" x2="-1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-1.7" x2="-1.7" y2="-1.35" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.35" x2="1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.7" x2="1.35" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-1.35" y1="1.7" x2="-1.7" y2="1.35" width="0.2032" layer="21"/>
+<wire x1="-0.716" y1="0.408" x2="-0.716" y2="-0.989" width="0.0762" layer="51"/>
+<wire x1="-0.716" y1="-0.989" x2="0.816" y2="-0.989" width="0.0762" layer="51"/>
+<wire x1="0.943" y1="0.943" x2="0.435" y2="0.943" width="0.0762" layer="51" curve="-270"/>
+<wire x1="0.943" y1="0.943" x2="0.8668" y2="0.7144" width="0.0762" layer="51"/>
+<wire x1="0.943" y1="0.943" x2="1.197" y2="0.8414" width="0.0762" layer="51"/>
+<wire x1="-0.4874" y1="-0.4048" x2="-0.4874" y2="-0.0238" width="0.0762" layer="51" curve="-280.388858"/>
+<wire x1="-0.4874" y1="0.1794" x2="-0.4874" y2="-0.0238" width="0.0762" layer="51"/>
+<wire x1="-0.4874" y1="-0.0238" x2="-0.589" y2="-0.1254" width="0.0762" layer="51"/>
+<wire x1="0.3334" y1="-0.9176" x2="0.308" y2="-0.435" width="0.0762" layer="51" curve="-248.760689"/>
+<wire x1="0.181" y1="-0.816" x2="0.3334" y2="-0.9176" width="0.0762" layer="51"/>
+<wire x1="0.3334" y1="-0.9176" x2="0.2826" y2="-1.0954" width="0.0762" layer="51"/>
+<text x="-2.45" y="2.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-4.15" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0.5176" y="-0.7938" size="0.4064" layer="51">X</text>
+<text x="-0.7192" y="0.6604" size="0.4064" layer="51">Y</text>
+<text x="-0.2" y="0.6636" size="0.4064" layer="51">Z</text>
+<smd name="24" x="-1" y="1.8" dx="0.2" dy="1" layer="1"/>
+<smd name="23" x="-0.6" y="1.8" dx="0.2" dy="1" layer="1"/>
+<smd name="22" x="-0.2" y="1.8" dx="0.2" dy="1" layer="1"/>
+<smd name="21" x="0.2" y="1.8" dx="0.2" dy="1" layer="1"/>
+<smd name="20" x="0.6" y="1.8" dx="0.2" dy="1" layer="1"/>
+<smd name="19" x="1" y="1.8" dx="0.2" dy="1" layer="1"/>
+<smd name="18" x="1.8" y="1" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="17" x="1.8" y="0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="16" x="1.8" y="0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="15" x="1.8" y="-0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="14" x="1.8" y="-0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="13" x="1.8" y="-1" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="1" x="-1.8" y="1" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="-1.8" y="0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="-1.8" y="0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="4" x="-1.8" y="-0.2" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="-1.8" y="-0.6" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="6" x="-1.8" y="-1" dx="0.2" dy="1" layer="1" rot="R90"/>
+<smd name="7" x="-1" y="-1.8" dx="0.2" dy="1" layer="1" rot="R180"/>
+<smd name="8" x="-0.6" y="-1.8" dx="0.2" dy="1" layer="1" rot="R180"/>
+<smd name="9" x="-0.2" y="-1.8" dx="0.2" dy="1" layer="1" rot="R180"/>
+<smd name="10" x="0.2" y="-1.8" dx="0.2" dy="1" layer="1" rot="R180"/>
+<smd name="11" x="0.6" y="-1.8" dx="0.2" dy="1" layer="1" rot="R180"/>
+<smd name="12" x="1" y="-1.8" dx="0.2" dy="1" layer="1" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SPARKFUN-SENSORS_MPU-9250">
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="27.94" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-10.16" x2="27.94" y2="15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<pin name="AD0/SDO" x="33.02" y="10.16" length="middle" rot="R180"/>
+<pin name="AUX_CL" x="33.02" y="12.7" length="middle" rot="R180"/>
+<pin name="AUX_DA" x="33.02" y="7.62" length="middle" rot="R180"/>
+<pin name="FSYNC" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="0" length="middle"/>
+<pin name="INT" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="NC" x="0" y="-7.62" length="middle"/>
+<pin name="NCS" x="33.02" y="5.08" length="middle" rot="R180"/>
+<pin name="REGOUT" x="0" y="5.08" length="middle"/>
+<pin name="RESV" x="0" y="12.7" length="middle"/>
+<pin name="SCL/SCLK" x="33.02" y="2.54" length="middle" rot="R180"/>
+<pin name="SDA/SDI" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="VDD" x="0" y="7.62" length="middle"/>
+<pin name="VDDIO" x="0" y="10.16" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPU-9250">
+<gates>
+<gate name="G$1" symbol="SPARKFUN-SENSORS_MPU-9250" x="-5.08" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="QFN-24-3MM">
+<connects>
+<connect gate="G$1" pin="AD0/SDO" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="21"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND" pad="18 20"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="NC" pad="2 3 4 5 6 14 15 16 17 19"/>
+<connect gate="G$1" pin="NCS" pad="22"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV" pad="1"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
+<connect gate="G$1" pin="SDA/SDI" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VDDIO" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8632,7 +8627,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$2" library="ANS" deviceset="JUNCTION" device=""/>
 <part name="U$3" library="ANS" deviceset="JUNCTION" device=""/>
 <part name="U$4" library="ANS" deviceset="JUNCTION" device=""/>
-<part name="U$5" library="SparkFun-Sensors" deviceset="MPU-9250" device=""/>
+<part name="U$5" library="cortex-mpu" deviceset="MPU-9250" device=""/>
 <part name="C26" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
 <part name="C27" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="C28" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
@@ -9503,8 +9498,7 @@ PWM</text>
 <junction x="137.16" y="66.04"/>
 <pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="58.42" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="66.04" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
 <junction x="142.24" y="124.46"/>
 </segment>
