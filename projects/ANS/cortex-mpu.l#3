@@ -8444,16 +8444,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="AUX_CL" pad="7"/>
 <connect gate="G$1" pin="AUX_DA" pad="21"/>
 <connect gate="G$1" pin="FSYNC" pad="11"/>
-<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="GND" pad="18 20"/>
 <connect gate="G$1" pin="INT" pad="12"/>
 <connect gate="G$1" pin="NC" pad="2 3 4 5 6 14 15 16 17 19"/>
 <connect gate="G$1" pin="NCS" pad="22"/>
 <connect gate="G$1" pin="REGOUT" pad="10"/>
-<connect gate="G$1" pin="RESV" pad="20"/>
+<connect gate="G$1" pin="RESV" pad="1"/>
 <connect gate="G$1" pin="SCL/SCLK" pad="23"/>
 <connect gate="G$1" pin="SDA/SDI" pad="24"/>
 <connect gate="G$1" pin="VDD" pad="13"/>
-<connect gate="G$1" pin="VDDIO" pad="1 8"/>
+<connect gate="G$1" pin="VDDIO" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

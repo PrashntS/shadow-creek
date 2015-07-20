@@ -8435,7 +8435,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 <deviceset name="MPU-9250">
 <gates>
-<gate name="G$1" symbol="SPARKFUN-SENSORS_MPU-9250" x="-17.78" y="-2.54"/>
+<gate name="G$1" symbol="SPARKFUN-SENSORS_MPU-9250" x="-5.08" y="10.16"/>
 </gates>
 <devices>
 <device name="">
